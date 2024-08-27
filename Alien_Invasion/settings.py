@@ -24,3 +24,5 @@ class Settings:
         self.fleet_drop_speed = 10
         #fleet direction 1 = right, -1 = left
         self.fleet_direction = 1
+
+        #comment
