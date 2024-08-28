@@ -12,7 +12,7 @@ class Alien(Sprite):
         self.settings = ai_game.settings
 
         #load image and set rect
-        self.image = pygame.image.load('images/alien.bmp')
+        self.image = pygame.image.load('Alien_Invasion/images/alien.bmp')
         self.rect = self.image.get_rect()
 
         #start each alien at the top left
