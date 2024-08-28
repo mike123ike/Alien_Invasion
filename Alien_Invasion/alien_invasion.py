@@ -1,4 +1,11 @@
+import subprocess
+
 import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--user', package])
+
+install('pygame')
 
 import pygame # type: ignore
 
