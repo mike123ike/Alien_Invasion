@@ -2,12 +2,14 @@ import subprocess
 
 import sys
 
-#def install(package):
-#    subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+def install(package):
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
 
-#install('pygame')
-
-import pygame # type: ignore
+try:
+    import pygame
+except ModuleNotFoundError:
+    install('pygame')
+    import pygame
 
 from settings import Settings
 
